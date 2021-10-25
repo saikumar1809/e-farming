@@ -1,0 +1,12 @@
+extend supplier
+block features 
+    .form__group
+        a.btn.btn--black(href="/advertisment/getAdvertismentForm") new advertisement
+    .advertisments
+        each ad in ads
+            .form1.login-form
+                    h2(name="crop")#cropname='cropname:  '+`${ad.cropname}`
+                    h2#quantity='Quantity:  '+`${ad.quantity}`
+                    h2#user='Name:  '+`${ad.user.name}`
+                    h2#number='contact details:  '+`${ad.user.phoneNo }` 
+                    

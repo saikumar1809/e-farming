@@ -1,0 +1,20 @@
+extends base
+
+block content
+    include menu-farmer
+    block features
+    .login-form
+      h2.heading-secondary.ma-bt-lg Post Advertisment
+      form.form.form--advertisment
+        .form__group
+          label.form__label(for='cropName') cropName
+          input#name.form__input(type='cropName', required='required')
+        .form__group
+          label.form__label(for='quantity') quantity
+          input#quantity.form__input(type='Number', required='required')
+          .form__group
+          label.form__label(for='Price') Price in rupees
+          input#price.form__input(type='Numnber', placeholder='ex.90', required='required')
+
+        .form__group
+          button.btn.btn--green Post

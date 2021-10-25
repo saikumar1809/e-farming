@@ -1,0 +1,14 @@
+extend admin
+block features 
+    link(rel='stylesheet' href='/css/farmer-tips.css')
+    h2.heading-secondary.ma-bt-lg Complaints
+    table
+        tr
+            th complaint
+            th From
+            th Mobile Number
+        each com in comps
+            tr
+                td=com.name
+                td=com.farmer.name
+                td=com.farmer.mobileNo

@@ -1,0 +1,11 @@
+extend admin
+block features 
+  link(rel='stylesheet' href='/css/complaintsStyle.css')
+  .tips-form
+      h2.heading-secondary.ma-bt-lg Tips Form
+      form.form.container.form--tips
+        .form__group
+              label.form__label(for='tips') please give your tip
+              textarea#tip.form__input( placeholder='your tip', required='required',rows="5",cols="5",name="tips")
+        .form__group
+              button.btn.btn--green.submit-tip send

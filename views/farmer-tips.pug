@@ -1,0 +1,12 @@
+extend farmer
+block features 
+    link(rel='stylesheet' href='/css/farmer-tips.css')
+    h2.heading-secondary.ma-bt-lg Tips
+    table
+        tr
+            th message
+            th From
+        each tip in tips
+            tr
+                td=tip.message
+                td Admin

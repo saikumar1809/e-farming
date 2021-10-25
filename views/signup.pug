@@ -1,0 +1,35 @@
+extends base
+
+block content
+  main.main
+    .login-form
+      h2.heading-secondary.ma-bt-lg Create your account
+      form.form.form--register
+        .form__group
+          label.form__label(for='name') name
+          input#name.form__input(type='name', required='required')
+        .form__group
+          label.form__label(for='Addhar') Addhar
+          input#addhar.form__input(type='Number', required='required')
+          .form__group
+          label.form__label(for='Email') Email
+          input#email.form__input(type='email', placeholder='you@example.com', required='required')
+        .form__group
+          label.form__label(for='userType') userType
+          select#role.form__input
+            option(value='farmer') farmer
+            option(value='supplier') supplier
+        .form__group
+          label.form__label(for='phoneNumber') phoneNumber
+          input#phoneNumber.form__input(type='Number', placeholder='ex.999999999', required='required')
+        .form__group
+          label.form__label(for='address') address
+          textarea#address.form__input( placeholder='your address', required='required',rows="5")
+        .form__group.ma-bt-md
+          label.form__label(for='password') Password
+          input#pwd.form__input(type='password', placeholder='••••••••', required='required', minlength='8')
+        .form__group.ma-bt-md
+          label.form__label(for='cpassword') conformPassword
+          input#cpassword.form__input(type='password', placeholder='••••••••', required='required', minlength='8')
+        .form__group
+          button.btn.btn--green(class='register') Register

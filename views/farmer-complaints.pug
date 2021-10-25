@@ -1,0 +1,11 @@
+extend farmer
+block features 
+  link(rel='stylesheet' href='/css/complaintsStyle.css')
+  .complaints-form
+      h2.heading-secondary.ma-bt-lg Complaints Form
+      form.form.container.form--complaints
+        .form__group
+              label.form__label(for='complaints') please file your complaint
+              textarea#complaint.form__input( placeholder='your complaint', required='required',rows="5",cols="5",name="complaints")
+        .form__group
+              button.btn.btn--green.submit-complaint submit
