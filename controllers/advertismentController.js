@@ -1,5 +1,5 @@
 const User = require('../models/UserModel');
-const Advertisment = require('../models/AdvertismentModel');
+const Advertisment = require('../models/advertismentModel');
 const AppError = require('../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 const factory = require('./handlerFactory');
